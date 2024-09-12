@@ -1,0 +1,233 @@
+$primary-color: #e3e3e3;
+$secondary-color: #f4f4f4;
+$background-color: white;
+$highlight-color: #170cdb;
+$text-color: #3f3f3f;
+$large-size: 1.5rem;
+$medium-size: 1rem;
+$small-size: 0.9rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+p,
+a {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  color: $text-color;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  header {
+    section.background-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 40vh;
+      background-image: url("../images/coding.jpg");
+      background-size: cover;
+      background-position: center;
+      transition: all 0.75s ease;
+      position: relative;
+      z-index: 0;
+
+      div.filter {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        min-height: 40vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      h3 {
+        color: $secondary-color;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  main {
+    section.info-section {
+      min-height: 60vh;
+      background-color: $background-color;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+
+      div.info {
+        flex-basis: 450px;
+
+        h1 {
+          font-size: $large-size;
+          font-weight: 800;
+        }
+        h2 {
+          font-size: $medium-size;
+        }
+
+        a {
+          color: $secondary-color;
+          background-color: $text-color;
+          padding: 0.5rem 1rem;
+          font-size: $medium-size;
+          border-radius: 20px;
+          display: inline-block;
+          margin-top: 1rem;
+          transition: all 0.2s ease;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      img {
+        // border: 2px solid salmon;
+        width: 40vw;
+        max-width: 15rem;
+      }
+    }
+
+    section.about-me-section {
+      background-color: $primary-color;
+      padding: 5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div.desc {
+        width: 60%;
+        text-align: center;
+        h2 {
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+        p {
+          font-weight: 300;
+        }
+      }
+
+      div.portfolio-link-section {
+        padding: 2rem 1rem;
+
+        div.collection-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          div.collection {
+            display: flex;
+            flex: 0 1 150px;
+            flex-direction: column;
+            padding: 1rem;
+
+            a {
+              div.button {
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                  height: 120%;
+                  object-fit: cover;
+                  transition: all 0.1s ease-in;
+                  padding: 0.3rem;
+                }
+
+                &:hover {
+                  border: 3px solid $text-color;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            p {
+              font-size: $medium-size;
+              font-weight: 500;
+              padding-top: 1rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    section.skill-progress-section {
+      background-color: $background-color;
+
+      div.progress-area {
+        margin: 2rem 5rem;
+
+        p {
+          font-size: $small-size;
+          font-weight: 400;
+          opacity: 75%;
+        }
+
+        div.progress-bars {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 3rem 5rem;
+
+          div.progress-bar-container {
+            min-width: 20rem;
+            padding: 1rem;
+
+            p {
+              font-size: 0.75rem;
+              color: $highlight-color;
+              margin: 0.5rem 0rem;
+              text-align: left;
+            }
+            div.progress {
+              background-color: $primary-color;
+
+              div.progress-bar {
+                background-color: $highlight-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

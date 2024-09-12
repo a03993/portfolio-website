@@ -1,0 +1,246 @@
+$primary-color: #e3e3e3;
+$secondary-color: #f4f4f4;
+$background-color: white;
+$highlight-color: #170cdb;
+$text-color: #3f3f3f;
+$large-size: 1.5rem;
+$medium-size: 1rem;
+$small-size: 0.9rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: $text-color;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+header {
+  padding: 0 20px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  h1 {
+    font-size: $medium-size;
+    font-weight: 900;
+    padding: 0.5rem;
+    opacity: 75%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  section.info_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    width: 80%;
+
+    img {
+      width: 12rem;
+      border-radius: 15%;
+    }
+
+    h2 {
+      padding: 1rem 0;
+      font-size: $large-size;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    div.nav {
+      padding-bottom: 1rem;
+      nav {
+        a {
+          margin: 0 0.5rem;
+          color: $primary-color;
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+      }
+    }
+    div.desc_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      div.desc {
+        flex: 1 1 500px;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div.title {
+          display: flex;
+          flex-wrap: wrap;
+
+          h3 {
+            font-size: $medium-size;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            padding: 0.25rem;
+            color: $highlight-color;
+          }
+
+          h3:before {
+            content: ">";
+            font-weight: 300;
+            padding: 0 0.2rem;
+          }
+        }
+
+        p {
+          max-width: 45rem;
+          font-size: $small-size;
+          letter-spacing: 0.2rem;
+          opacity: 75%;
+          margin-top: 1rem;
+          padding: 1.5rem;
+          background-color: $secondary-color;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    article {
+      padding-top: 3rem;
+      color: $text-color;
+
+      span {
+        font-size: $large-size;
+      }
+
+      span.last_symbol {
+        position: absolute;
+        padding: 0.5rem 0.1rem;
+      }
+    }
+  }
+
+  section.skill_section {
+    border-top: 1.5px solid lightgray;
+
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    h2 {
+      font-size: $large-size;
+      font-weight: 900;
+    }
+
+    div.skills {
+      display: flex;
+      padding: 1rem;
+
+      div.skill {
+        flex: 1 1 10rem;
+        margin: 1rem;
+
+        h3 {
+          font-size: $medium-size;
+          font-weight: 600;
+          color: $highlight-color;
+          border-bottom: 2px solid $highlight-color;
+        }
+
+        p {
+          font-size: $small-size;
+          padding-top: 1rem;
+          opacity: 50%;
+        }
+      }
+    }
+  }
+
+  section.experience_section {
+    border-top: 1.5px solid lightgray;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    div.experience {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0;
+
+      h3 {
+        padding: 0.5rem;
+        font-size: $large-size;
+        font-weight: 500;
+        color: $highlight-color;
+      }
+
+      div.summary {
+        display: flex;
+
+        p {
+          font-size: $small-size;
+          font-weight: 500;
+          padding: 0.5rem;
+          opacity: 75%;
+
+          i {
+            padding-right: 0.5rem;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 2rem;
+
+        li {
+          font-size: $small-size;
+          letter-spacing: 0.1rem;
+          color: $highlight-color;
+          border: 2px solid $highlight-color;
+          border-radius: 10px;
+          padding: 0.3rem;
+          margin: 0.5rem;
+        }
+      }
+
+      div.desc {
+        margin-top: 1rem;
+
+        p {
+          font-size: 0.75rem;
+          opacity: 75%;
+          padding: 0.5rem 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+p,
+a {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  color: #3f3f3f;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+}
+body header section.background-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  background-image: url("../images/coding.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.75s ease;
+  position: relative;
+  z-index: 0;
+}
+body header section.background-img div.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body header section.background-img h3 {
+  color: #f4f4f4;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+body header section.background-img h3 span {
+  font-weight: 300;
+}
+body main section.info-section {
+  min-height: 60vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+body main section.info-section div.info {
+  flex-basis: 450px;
+}
+body main section.info-section div.info h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+body main section.info-section div.info h2 {
+  font-size: 1rem;
+}
+body main section.info-section div.info a {
+  color: #f4f4f4;
+  background-color: #3f3f3f;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+}
+body main section.info-section div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.info-section img {
+  width: 40vw;
+  max-width: 15rem;
+}
+body main section.about-me-section {
+  background-color: #e3e3e3;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section.about-me-section div.desc {
+  width: 60%;
+  text-align: center;
+}
+body main section.about-me-section div.desc h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+body main section.about-me-section div.desc p {
+  font-weight: 300;
+}
+body main section.about-me-section div.portfolio-link-section {
+  padding: 2rem 1rem;
+}
+body main section.about-me-section div.portfolio-link-section div.collection-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.about-me-section div.portfolio-link-section div.collection-container div.collection {
+  display: flex;
+  flex: 0 1 150px;
+  flex-direction: column;
+  padding: 1rem;
+}
+body main section.about-me-section div.portfolio-link-section div.collection-container div.collection a div.button {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.about-me-section div.portfolio-link-section div.collection-container div.collection a div.button img {
+  height: 120%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.1s ease-in;
+  padding: 0.3rem;
+}
+body main section.about-me-section div.portfolio-link-section div.collection-container div.collection a div.button:hover {
+  border: 3px solid #3f3f3f;
+  cursor: pointer;
+}
+body main section.about-me-section div.portfolio-link-section div.collection-container div.collection p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  text-align: center;
+}
+body main section.skill-progress-section {
+  background-color: white;
+}
+body main section.skill-progress-section div.progress-area {
+  margin: 2rem 5rem;
+}
+body main section.skill-progress-section div.progress-area p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 75%;
+}
+body main section.skill-progress-section div.progress-area div.progress-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 5rem;
+}
+body main section.skill-progress-section div.progress-area div.progress-bars div.progress-bar-container {
+  min-width: 20rem;
+  padding: 1rem;
+}
+body main section.skill-progress-section div.progress-area div.progress-bars div.progress-bar-container p {
+  font-size: 0.75rem;
+  color: #170cdb;
+  margin: 0.5rem 0rem;
+  text-align: left;
+}
+body main section.skill-progress-section div.progress-area div.progress-bars div.progress-bar-container div.progress {
+  background-color: #e3e3e3;
+}
+body main section.skill-progress-section div.progress-area div.progress-bars div.progress-bar-container div.progress div.progress-bar {
+  background-color: #170cdb;
+}/*# sourceMappingURL=index.css.map */

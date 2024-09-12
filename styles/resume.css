@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+header {
+  padding: 0 20px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+header h1 {
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 0.5rem;
+  opacity: 75%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section.info_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+  width: 80%;
+}
+main section.info_section img {
+  width: 12rem;
+  border-radius: 15%;
+}
+main section.info_section h2 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+main section.info_section div.nav {
+  padding-bottom: 1rem;
+}
+main section.info_section div.nav nav a {
+  margin: 0 0.5rem;
+  color: #e3e3e3;
+}
+main section.info_section div.nav nav a:hover {
+  color: #170cdb;
+}
+main section.info_section div.desc_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.info_section div.desc_wrapper div.desc {
+  flex: 1 1 500px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.info_section div.desc_wrapper div.desc div.title {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.info_section div.desc_wrapper div.desc div.title h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding: 0.25rem;
+  color: #170cdb;
+}
+main section.info_section div.desc_wrapper div.desc div.title h3:before {
+  content: ">";
+  font-weight: 300;
+  padding: 0 0.2rem;
+}
+main section.info_section div.desc_wrapper div.desc p {
+  max-width: 45rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  opacity: 75%;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+}
+main section.info_section article {
+  padding-top: 3rem;
+  color: #3f3f3f;
+}
+main section.info_section article span {
+  font-size: 1.5rem;
+}
+main section.info_section article span.last_symbol {
+  position: absolute;
+  padding: 0.5rem 0.1rem;
+}
+main section.skill_section {
+  border-top: 1.5px solid lightgray;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+main section.skill_section h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+main section.skill_section div.skills {
+  display: flex;
+  padding: 1rem;
+}
+main section.skill_section div.skills div.skill {
+  flex: 1 1 10rem;
+  margin: 1rem;
+}
+main section.skill_section div.skills div.skill h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #170cdb;
+  border-bottom: 2px solid #170cdb;
+}
+main section.skill_section div.skills div.skill p {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  opacity: 50%;
+}
+main section.experience_section {
+  border-top: 1.5px solid lightgray;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+main section.experience_section div.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+main section.experience_section div.experience h3 {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #170cdb;
+}
+main section.experience_section div.experience div.summary {
+  display: flex;
+}
+main section.experience_section div.experience div.summary p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  opacity: 75%;
+}
+main section.experience_section div.experience div.summary p i {
+  padding-right: 0.5rem;
+}
+main section.experience_section div.experience ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 2rem;
+}
+main section.experience_section div.experience ul li {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: #170cdb;
+  border: 2px solid #170cdb;
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0.5rem;
+}
+main section.experience_section div.experience div.desc {
+  margin-top: 1rem;
+}
+main section.experience_section div.experience div.desc p {
+  font-size: 0.75rem;
+  opacity: 75%;
+  padding: 0.5rem 1.5rem;
+}/*# sourceMappingURL=resume.css.map */
