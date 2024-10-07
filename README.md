@@ -1,40 +1,47 @@
-# Portfolio Website
+# udemy-project8-photo-site
+
+This is a web application developed using React that connects to the Pexels API to fetch free images.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
+1. [Demo](#demo)
 2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
+3. [Getting Started](#getting-started)
 
-## Introduction
+## Demo
 
-This project is a personal portfolio website created as part of a Udemy course assignment. It aims to showcase the developer's skills and experience, with a focus on styling using SCSS. The website includes sections such as a resume page and external links to featured projects, providing a comprehensive overview of the developer's professional background and design capabilities.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fcc3c738-533c-4eb8-b29e-12939568dc78/deploy-status)](https://free-photo-download-site.netlify.app)
 
 ## Features
+- Fetches high-quality images from Pexels.
+- User-friendly interface for easy navigation.
+- Responsive design suitable for various devices.
 
-- **Responsive Design**: Fully responsive, adapting seamlessly to different devices and screen sizes.
-- **SCSS Styling**: All styles are written using SCSS, demonstrating proficiency in modular and maintainable CSS.
-- **Resume Page**: A dedicated page for showcasing the developer's resume and professional experiences.
-- **External Links to Projects**: Links to various project websites for a more detailed view of the developer's work.
+## Getting Started
 
-## Installation
+### Prerequisites
+Before you begin, ensure you have the following installed on your machine:
+- **Node.js** (v12 or higher)
+- **npm** (Node Package Manager, comes with Node.js)
 
-Follow the steps below to set up the project locally.
+### Installation
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/a03993/udemy-project8-photo-site.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd udemy-project8-photo-site
+    ```
+3. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
 
+### Running the Application
+To run the application in development mode, execute the following command:
 ```bash
-# Clone the repository
-git clone https://github.com/a03993/udemy-project3-portfolio-site.git
-
-# Navigate to the project directory
-cd udemy-project3-portfolio-site
+npm start
 ```
 
-## Usage
-To view the website locally, open the index.html file in your web browser:
-```bash
-# Example of opening the file locally
-open index.html
-```
+The app will automatically open in your default web browser at http://localhost:3000.
